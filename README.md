@@ -1,16 +1,17 @@
 # audio_recording_service
 
-A new Flutter project.
+Demo project for an audio recording service following the D (DIP) word from SOLID.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Audio Recording Implementations
+### flutter_sound_lite
+Link: https://pub.dev/packages/flutter_sound_lite
+#### Steps to install it in your own projects:
+1 Android\
+1.1 In android/app/build.gradle, increase `minSdkVersion` to 21\
+1.2 On terminal, type `flutter pub add flutter_sound_lite` and press enter\
+1.3 On terminal, type `flutter pub add permission_handler` and press enter\
+1.4 In android/app/src/main/AndroidManifest.xml, between `manifest` and `application` tags, put\
+`<uses-permission android:name="android.permission.RECORD_AUDIO" />`\
+`<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />`\
+2 iOS\
+Not yet
